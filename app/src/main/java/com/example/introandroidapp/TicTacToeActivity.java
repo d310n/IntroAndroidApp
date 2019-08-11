@@ -58,7 +58,7 @@ public class TicTacToeActivity extends AppCompatActivity implements View.OnClick
         //set event handlers
         for (int x = 0; x < gameGrid.length; x++) {
             for (int y = 0; y < gameGrid[x].length; y++) {
-                gameGrid[x][y].setText(" "); //use a space for each square
+                gameGrid[x][y].setOnClickListener(this);
             }
         }
 
