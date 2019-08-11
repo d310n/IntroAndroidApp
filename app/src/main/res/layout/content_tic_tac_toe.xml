@@ -3,12 +3,12 @@
 <TableLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal">
 
     <TableRow>
+
         <Button
             android:id="@+id/square1"
             android:layout_width="100dp"
@@ -28,7 +28,8 @@
             android:textSize="30sp" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:orientation="vertical">
+
         <Button
             android:id="@+id/square4"
             android:layout_width="100dp"
@@ -49,11 +50,13 @@
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/square7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/square8"
             android:layout_width="100dp"
@@ -68,6 +71,7 @@
     </TableRow>
 
     <TableRow>
+
         <TextView
             android:id="@+id/messageTextView"
             android:layout_width="wrap_content"
@@ -82,7 +86,10 @@
             android:textSize="20sp" />
 
     </TableRow>
-    <TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/newGameButton"
