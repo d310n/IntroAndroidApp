@@ -9,8 +9,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.Spinner;
+import android.widget.Switch;
+import android.widget.TextView;
 
-public class InformationPageActivity extends AppCompatActivity {
+public class InformationPageActivity extends AppCompatActivity implements View.OnClickListener {
+    Button btnSave;
+    Spinner spnSeason;
+    SeekBar skbTemp;
+    Switch swchAllergy;
+    TextView lblSeekValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +37,11 @@ public class InformationPageActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public void onClick(View v){
+
     }
 
 }

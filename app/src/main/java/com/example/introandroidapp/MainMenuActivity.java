@@ -31,6 +31,7 @@ public class MainMenuActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         //Add a listener to the button to take you to the temp converter
         Button btnWeather=(Button) findViewById(R.id.btnWeather);
         btnWeather.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +40,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 goWeather();
             }
         });
+
         //Add a listener to the button to take you to the temp converter
         Button btnDraw =(Button) findViewById(R.id.btnDraw);
         btnDraw.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +49,22 @@ public class MainMenuActivity extends AppCompatActivity {
                 goDrawing();
             }
         });
+
         //Add a listener to the button to take you to the temp converter
         Button btnTicTacToe =(Button) findViewById(R.id.btnTicTacToe);
         btnTicTacToe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 goTicTacToe();
+            }
+        });
+
+        //Add a listener to the button to take you to the info activity
+        Button btnInfo=(Button) findViewById(R.id.btnInfo);
+        btnInfo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                goInfo();
             }
         });
 
@@ -81,6 +93,11 @@ public class MainMenuActivity extends AppCompatActivity {
         this.startActivity(intent);
     }
 
+    private void goInfo() {
+        Intent intent = new Intent(MainMenuActivity.this, InformationPageActivity.class);
+        this.startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //Handle action bar item clicks here. The action bar will
@@ -96,20 +113,5 @@ public class MainMenuActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-    }
-
-      <string-array name="seasons">
-        <item>Spring</item>
-        <item>Summer</item>
-        <item>Fall</item>
-        <item>Winter</item>
-    </string-array>
-
-    Button btnInfo=(Button) findViewById(R.id.btnInfo);
-    btnInfo.setOnClickListener(new view.OnClickListener(){
-        @Override
-                public void onClick(View v){
-            goInfo();
-        }
     }
 }
