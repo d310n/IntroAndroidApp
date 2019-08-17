@@ -97,4 +97,19 @@ public class MainMenuActivity extends AppCompatActivity {
         }
 
     }
+
+      <string-array name="seasons">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Fall</item>
+        <item>Winter</item>
+    </string-array>
+
+    Button btnInfo=(Button) findViewById(R.id.btnInfo);
+    btnInfo.setOnClickListener(new view.OnClickListener(){
+        @Override
+                public void onClick(View v){
+            goInfo();
+        }
+    }
 }

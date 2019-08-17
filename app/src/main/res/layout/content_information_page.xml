@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InformationPageActivity"
+    tools:showIn="@layout/activity_information_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/informationTitle"
+        android:textSize="35sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="81dp"
+        android:text="@string/favoriteSeason"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <Spinner
+        android:id="@+id/spnSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="0dp"
+        android:entries="@array/seasons">
+        </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="177dp"
+        android:text="@string/favoriteTemp"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <SeekBar
+        android:id="@+id/skbTemp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="147dp"
+        android:max="120"
+        android:progress="70" />
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="205dp"
+        android:text="120"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/lblSeekValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="226dp"
+        android:text="@string/seekValue"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="348dp"
+        android:text="@string/allergies"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <Switch
+        android:id="@+id/swchAllergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="143dp"
+        android:text="Allergies:"
+        android:textOff="no"
+        android:textOn="yes" />
+</RelativeLayout>

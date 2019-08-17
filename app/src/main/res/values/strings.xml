@@ -19,7 +19,18 @@
     <string name="title_activity_my_drawing">MyDrawing</string>
     <string name="title_activity_weather">WeatherActivity</string>
     <string name="title_activity_tic_tac_toe">TicTacToeActivity</string>
-    <string name ="message_label">Player X\'s turn</string>
+    <string name="message_label">Player X\'s turn</string>
     <string name="new_game_button">New Game</string>
+    <string name="title_activity_information_page">InformationPageActivity</string>
+    <string name="informationTitle">Your information</string>
+    <string name="favoriteSeason">What is your favorite season?</string>
+    <string name="favoriteTemp">What is your favorite temperature?</string>
+    <string name="allergies">Do you have allergies?</string>
+    <string-array name="seasons">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Fall</item>
+        <item>Winter</item>
+    </string-array>
 
 </resources>
