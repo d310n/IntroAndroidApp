@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SongActivity"
+    tools:showIn="@layout/activity_song">
+
+    <VideoView
+        android:id="@+id/vidView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+    <activity
+        android:name=".SongActivity"
+        android:label="@string/title_activity_song"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="landscape">
+
+    </activity>
+</RelativeLayout>

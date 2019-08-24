@@ -68,6 +68,22 @@ public class MainMenuActivity extends AppCompatActivity {
             }
         });
 
+        Button btnTakePic = (Button) findViewById(R.id.btnTakePic);
+        btnTakePic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goTakePic();
+            }
+        });
+
+        Button btnFavSong = (Button) findViewById(R.id.btnSong);
+        btnFavSong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goSong();
+            }
+        });
+
     }
 
     @Override
@@ -114,4 +130,14 @@ public class MainMenuActivity extends AppCompatActivity {
         }
 
     }
+
+    private void goSong(){
+        Intent intent = new Intent(MainMenuActivity.this, SongActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void goTakePic(){
+        Intent intent = new Intent(MainMenuActivity.this, TakePictureActivity.class);
+    }
+
 }

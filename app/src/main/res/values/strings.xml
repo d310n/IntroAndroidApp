@@ -26,11 +26,16 @@
     <string name="favoriteSeason">What is your favorite season?</string>
     <string name="favoriteTemp">What is your favorite temperature?</string>
     <string name="allergies">Do you have allergies?</string>
+    <string name="save">Save</string>
+    <string name="backToMain">Back To Main</string>
     <string-array name="seasons">
         <item>Spring</item>
         <item>Summer</item>
         <item>Fall</item>
         <item>Winter</item>
     </string-array>
+    <string name="title_activity_information_results">InformationResultsActivity</string>
+    <string name="title_activity_song">SongActivity</string>
+    <string name="title_activity_take_picture">TakePictureActivity</string>
 
 </resources>

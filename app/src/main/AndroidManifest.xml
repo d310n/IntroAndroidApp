@@ -10,9 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TakePictureActivity"
+            android:label="@string/title_activity_take_picture"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SongActivity"
+            android:label="@string/title_activity_song"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InformationResultsActivity"
+            android:label="@string/title_activity_information_results"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".InformationPageActivity"
             android:label="@string/title_activity_information_page"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TicTacToeActivity"
             android:label="@string/title_activity_tic_tac_toe"
