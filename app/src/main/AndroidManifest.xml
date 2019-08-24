@@ -14,9 +14,11 @@
             android:label="@string/title_activity_take_picture"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".SongActivity"
-            android:label="@string/title_activity_song"
-            android:theme="@style/AppTheme.NoActionBar" />
+        android:name=".SongActivity"
+        android:label="@string/title_activity_song"
+        android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape"
+            />
         <activity
             android:name=".InformationResultsActivity"
             android:label="@string/title_activity_information_results"

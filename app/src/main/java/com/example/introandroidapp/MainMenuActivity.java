@@ -114,6 +114,16 @@ public class MainMenuActivity extends AppCompatActivity {
         this.startActivity(intent);
     }
 
+    private void goSong(){
+        Intent intent = new Intent(MainMenuActivity.this, SongActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void goTakePic(){
+        Intent intent = new Intent(MainMenuActivity.this, TakePictureActivity.class);
+        this.startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //Handle action bar item clicks here. The action bar will
@@ -129,15 +139,6 @@ public class MainMenuActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
-    }
-
-    private void goSong(){
-        Intent intent = new Intent(MainMenuActivity.this, SongActivity.class);
-        this.startActivity(intent);
-    }
-
-    private void goTakePic(){
-        Intent intent = new Intent(MainMenuActivity.this, TakePictureActivity.class);
     }
 
 }
